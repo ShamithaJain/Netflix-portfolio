@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-netflix-black text-white font-sans antialiased;
+    background: linear-gradient(to bottom, #000000 0%, #141414 50%, #000000 100%);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0.95) 100%
+    );
+  }
+  
+  .glass-card {
+    background: rgba(20, 20, 20, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-card-red {
+    background: rgba(20, 20, 20, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(229, 9, 20, 0.3);
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.2);
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 transform hover:scale-105 hover:z-50;
+  }
+  
+  .row-container {
+    @apply overflow-x-auto scrollbar-hide pb-4;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .vignette {
+    position: relative;
+  }
+  
+  .vignette::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .spotlight {
+    background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(229, 9, 20, 0.15), transparent);
+  }
+}
+
