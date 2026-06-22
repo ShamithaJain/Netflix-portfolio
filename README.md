@@ -1,6 +1,6 @@
-# Netflix-Style Portfolio - Shamitha Jain
+# Netflix-Style Portfolio - Shamitha Jain   
 
-A modern, Netflix-inspired portfolio website built with React, Vite, and Tailwind CSS.
+A modern, Netflix-inspired portfolio website built with React, Vite, and Tailwind CSS. [Live Demo](https://shamithajain-portfolio.onrender.com)
 
 ## Features
 
