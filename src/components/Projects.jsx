@@ -12,19 +12,20 @@ const Projects = () => {
       description: 'Generate personalized, portfolio-aware cold emails using LLMs + ChromaDB. Matches job requirements against stored tech stack and enriches emails with relevant portfolio links.',
       tags: ['Python', 'ChromaDB', 'LangChain', 'LLM', 'Vector Embeddings'],
       github: 'https://github.com/ShamithaJain/Cold-email-Generator',
-      // image:'../assets/coldemail.jpg',
     },
     {
-      name: 'Travel Booking App',
-      description: 'Django-based travel booking platform with user authentication and booking management. Uses crispy-bootstrap5 for responsive forms and is deployed on PythonAnywhere.',
-      tags: ['Django', 'Python', 'Authentication', 'Responsive UI', 'PythonAnywhere'],
-      github: 'https://github.com/ShamithaJain/Travel-Booking',
+      name: 'Person of Interest Search using Vision-Language Models',
+      description: 'Created an advanced multimodal search system connecting images and text to enable accurate semantic retrieval using state-of-the-art vision-language models.',
+      date: 'Apr 2026 – May 2026',
+      tags: ['Python', 'FAISS', 'Vision-Language Models', 'Computer Vision', 'Embeddings', 'Image Retrieval', 'Ranking'],
+      github: 'https://github.com/ShamithaJain/person-of-interest-search',
     },
     {
-      name: 'Health Advisor Web App',
-      description: 'Frontend for a health advisory platform built using React (Vite), TypeScript, and Tailwind CSS. Provides personalized health insights with an interactive and responsive interface.',
-      tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-      github: 'https://github.com/ShamithaJain/Health-Advisor',
+      name: 'Embedding Space Analysis and Fine-Tuning of Transformer Models',
+      description: 'Fine-tuned transformer-based language models and analyzed embedding representations to study semantic structure, cluster separability, and representation quality.',
+      date: 'Mar 2026 – Apr 2026',
+      tags: ['Python', 'DistilBERT', 'BERT', 'Sentence Transformers', 'PCA', 't-SNE', 'UMAP', 'NLP'],
+      github: 'https://github.com/ShamithaJain/embedding-space-analysis',
     },
   ]
 
@@ -57,7 +58,7 @@ const Projects = () => {
       </motion.h2>
       
       <div>
-        <ProjectRow title="Web Apps" projects={webApps} onCardClick={setSelectedProject} />
+        <ProjectRow title="Technical Projects" projects={webApps} onCardClick={setSelectedProject} />
         <ProjectRow title="Internship Projects - Opportive" projects={internshipProjects} onCardClick={setSelectedProject} />
       </div>
 

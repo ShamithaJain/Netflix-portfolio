@@ -40,7 +40,14 @@ const ProjectCard = ({ project, onCardClick }) => {
       
       {/* Content */}
       <div className="p-6 h-[calc(100%-12rem)] flex flex-col">
-        <h3 className="text-xl font-bold mb-2">{project.name}</h3>
+        <div className="flex items-center justify-between mb-3 gap-3">
+          <h3 className="text-xl font-bold">{project.name}</h3>
+          {project.date && (
+            <span className="text-xs px-3 py-1 rounded-full bg-netflix-red/10 text-netflix-red border border-netflix-red/30">
+              {project.date}
+            </span>
+          )}
+        </div>
         <p className="text-sm text-gray-400 mb-4 line-clamp-3 flex-grow">
           {project.description}
         </p>
