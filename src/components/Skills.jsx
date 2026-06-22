@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaBrain, FaProjectDiagram, FaLayerGroup, FaCode, FaLaptop, FaSparkles } from 'react-icons/fa'
+import { FaBrain, FaProjectDiagram, FaLayerGroup, FaCode, FaLaptop, FaMagic } from 'react-icons/fa'
 
 const skillCategories = [
   {
@@ -80,7 +80,7 @@ const Skills = () => {
                 <h3 className="text-3xl font-bold text-white">15+ skills</h3>
               </div>
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-netflix-red/15 text-netflix-red text-xl">
-                <FaSparkles />
+                <FaMagic />
               </div>
             </div>
             <p className="text-sm text-gray-400">
