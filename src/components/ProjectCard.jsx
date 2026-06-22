@@ -8,12 +8,12 @@ const ProjectCard = ({ project, onCardClick }) => {
       className="min-w-[320px] md:min-w-[380px] h-[500px] rounded-lg overflow-hidden glass-card cursor-pointer group/card relative"
       onClick={() => onCardClick(project)}
     >
-      <div className="h-48 w-full overflow-hidden relative bg-netflix-black ring-1 ring-white/10">
+      <div className="relative h-56 w-full overflow-hidden rounded-t-lg bg-netflix-black ring-1 ring-white/10">
         {project.image ? (
           <img
             src={project.image}
             alt={project.name}
-            className="block w-full h-full object-cover filter brightness-110 contrast-125 transition-opacity duration-300"
+            className="absolute inset-0 h-full w-full object-cover object-center filter brightness-110 contrast-125 transition-opacity duration-300"
           />
         ) : (
           <div className="h-full bg-gradient-to-br from-netflix-red/20 via-purple-900/20 to-netflix-red/20 flex items-center justify-center">
