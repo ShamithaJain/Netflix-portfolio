@@ -8,22 +8,12 @@ const ProjectCard = ({ project, onCardClick }) => {
       className="min-w-[320px] md:min-w-[380px] h-[500px] rounded-lg overflow-hidden glass-card cursor-pointer group/card relative"
       onClick={() => onCardClick(project)}
     >
-      {/* Thumbnail */}
-      <div className="h-48 bg-gradient-to-br from-netflix-red/20 via-purple-900/20 to-netflix-red/20 flex items-center justify-center">
-        <div className="text-center">
-          <div className="w-20 h-20 mx-auto mb-2 rounded-lg bg-netflix-red/30 flex items-center justify-center text-3xl font-bold">
-            {project.name.charAt(0)}
-          </div>
-          <p className="text-xs text-gray-400">Project Preview</p>
-        </div>
-      </div>
-
-      {/* <div className="h-48 w-full overflow-hidden relative bg-black">
+      <div className="h-48 w-full overflow-hidden relative bg-netflix-black ring-1 ring-white/10">
         {project.image ? (
           <img
             src={project.image}
             alt={project.name}
-            className="w-full h-full object-cover opacity-80 group-hover/card:opacity-100 transition-opacity duration-300"
+            className="block w-full h-full object-cover filter brightness-110 contrast-125 transition-opacity duration-300"
           />
         ) : (
           <div className="h-full bg-gradient-to-br from-netflix-red/20 via-purple-900/20 to-netflix-red/20 flex items-center justify-center">
@@ -35,7 +25,7 @@ const ProjectCard = ({ project, onCardClick }) => {
             </div>
           </div>
         )}
-      </div> */}
+      </div>
 
       
       {/* Content */}

@@ -6,7 +6,7 @@ const Education = () => {
     {
       institution: 'SDM College of Engineering & Technology, Dharwad',
       degree: 'B.E in AIML',
-      score: 'CGPA: 8.63',
+      score: 'CGPA: 8.86',
     },
     {
       institution: 'Excel P U College, Guruvayanakere',

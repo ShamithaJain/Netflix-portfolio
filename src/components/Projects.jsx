@@ -2,46 +2,37 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaTimes, FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import ProjectRow from './ProjectRow'
+import PersonofinterestImage from '../assets/PersonofInterest.png'
+import EmbeddingSpaceImage from '../assets/EmbeddingSpace.png'
+import ColdEmailGeneratorImage from '../assets/ColdEmailGenerator.png'
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null)
 
   const webApps = [
     {
-      name: 'AI-Powered Cold Email Generator',
-      description: 'Generate personalized, portfolio-aware cold emails using LLMs + ChromaDB. Matches job requirements against stored tech stack and enriches emails with relevant portfolio links.',
-      tags: ['Python', 'ChromaDB', 'LangChain', 'LLM', 'Vector Embeddings'],
-      github: 'https://github.com/ShamithaJain/Cold-email-Generator',
-    },
-    {
       name: 'Person of Interest Search using Vision-Language Models',
       description: 'Created an advanced multimodal search system connecting images and text to enable accurate semantic retrieval using state-of-the-art vision-language models.',
       date: 'Apr 2026 – May 2026',
       tags: ['Python', 'FAISS', 'Vision-Language Models', 'Computer Vision', 'Embeddings', 'Image Retrieval', 'Ranking'],
-      github: 'https://github.com/ShamithaJain/person-of-interest-search',
+      github: 'https://github.com/ShamithaJain/Person-of-Interest-Search-using-Vision-Language-Models',
+      image: PersonofinterestImage,
     },
     {
       name: 'Embedding Space Analysis and Fine-Tuning of Transformer Models',
       description: 'Fine-tuned transformer-based language models and analyzed embedding representations to study semantic structure, cluster separability, and representation quality.',
       date: 'Mar 2026 – Apr 2026',
       tags: ['Python', 'DistilBERT', 'BERT', 'Sentence Transformers', 'PCA', 't-SNE', 'UMAP', 'NLP'],
-      github: 'https://github.com/ShamithaJain/embedding-space-analysis',
-    },
-  ]
-
-  const internshipProjects = [
-    {
-      name: 'Feedback App',
-      description: 'Full-stack feedback management system with admin dashboard, feedback forms, and automated email alerts.',
-      tags: ['Express.js', 'MongoDB', 'Node.js', 'Email Automation'],
-      github: 'https://github.com/ShamithaJain/Feedback-app',
-      demo: 'https://feedback-app-15pr.onrender.com/',
+      github: 'https://github.com/ShamithaJain/Embedding-Space-Analysis',
+      image: EmbeddingSpaceImage,
     },
     {
-      name: 'Chat App',
-      description: 'Real-time messaging app using Socket.IO for live communication.',
-      tags: ['Socket.IO', 'Express.js', 'MongoDB', 'Real-time'],
-      github: 'https://github.com/ShamithaJain/RealTimeChatApplication',
+      name: 'AI-Powered Cold Email Generator',
+      description: 'Generate personalized, portfolio-aware cold emails using LLMs + ChromaDB. Matches job requirements against stored tech stack and enriches emails with relevant portfolio links.',
+      date: 'Feb 2026 – Mar 2026',
+      tags: ['Python', 'ChromaDB', 'LangChain', 'LLM', 'Vector Embeddings'],
+      github: 'https://github.com/ShamithaJain/Cold-email-Generator',
+      image: ColdEmailGeneratorImage,
     },
   ]
 
@@ -59,7 +50,6 @@ const Projects = () => {
       
       <div>
         <ProjectRow title="Technical Projects" projects={webApps} onCardClick={setSelectedProject} />
-        <ProjectRow title="Internship Projects - Opportive" projects={internshipProjects} onCardClick={setSelectedProject} />
       </div>
 
       {/* Modal */}
